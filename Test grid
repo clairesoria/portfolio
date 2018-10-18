@@ -1,0 +1,37 @@
+
+
+<div class="portofolio">
+  <div class="section-content">
+
+    <ul class="works-filter uk-subnav uppercase ultrabold">
+
+      <li data-uk-filter="" data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;, delay:20}" class="uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade"><a href=" #">Everything</a></li>
+
+      <li data-uk-filter="filter-projects" data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;,delay:40 }" class="uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade"><a href="#"> Projects</a></li>
+    </ul>
+
+    <div data-uk-grid="{controls: &#39;#work&#39;}" style="position: relative; height: 200px;">
+
+      <div class="work uk-width-small-1-1 uk-width-large-1-2 "  data-grid-prepared="true" style="position: absolute; box-sizing: border-box; top: 0px; left: 0px; opacity: 1;">
+
+        <img src="./img/test.jpg" alt="test" class="img-responsive">
+        <a href="./img/test.jpg" data-lightbox="works" title="Fire">
+          <div class="hover">
+              <p class="dark f-semi-expanded bold uppercase">Fit4All <br> project</p>
+          </div>
+        </a>
+      </div> <!-- work uk width (aqui falta las pics responsive)-->
+
+    <div class="work uk-width-small-1-1 uk-width-large-1-2 "
+    data-uk-filter="filter-projects"  data-grid-prepared="true" style="position: absolute; box-sizing: border-box; top: 0px; left:288.797px; opacity: 1;">
+
+      <img src="./img/test2.jpg" alt="test" class="img-responsive">
+      <a href="./img/test.jpg" data-lightbox="works" title="Fire">
+        <div class="hover">
+            <p class="dark f-semi-expanded bold uppercase">Test <br> Two</p>
+        </div>
+      </a>
+</div> <!-- work uk width (aqui falta las pics responsive)-->
+</div> <!-- data uk grids-->
+</div>
+</div> <!-- end portofolio -->
