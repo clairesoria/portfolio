@@ -1,18 +1,4 @@
 @charset "utf-8";
-
-
-/* ----------------------------------
-
-Name: style.css
-Author: Fourtabs
-Website: https://www.fourtabs.com
-Exclusively available here: https://themeforest.net/user/fourtabsthemes
-
-------------------------------------- */
-
-
-
-
 /*====================================================
 
 
@@ -52,7 +38,7 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 			+ Headings
 			+ Contact Button
 
-		06. Portfolio
+		06. Grid
 
 		07. Blog
 
@@ -101,8 +87,8 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 	/* Lato */
 	@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 
-	/* Quicksand */
-	@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700);
+	/* Exo */
+	@import url(https://fonts.googleapis.com/css?family=Exo:300,400,500,700);
 
 
 
@@ -132,7 +118,7 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 		padding:0;
 		margin-left:0;
 		margin-right:0;
-		font-family: 'Quicksand', sans-serif;
+		font-family: 'Exo', sans-serif;
 		-webkit-font-smoothing: antialiased;
 		text-align: center;
 		font-size: 1em;
@@ -141,7 +127,6 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 	body{
 		overflow-x: hidden;
 	}
-
 
 	.container{
 		margin: 0px auto;
@@ -197,17 +182,31 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 
 
 
-	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-		font-family: 'Quicksand', sans-serif;
+	h1, h2, h3, h4, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+		font-family: 'Exo', sans-serif;
 		font-weight:100;
 		margin: 0px;
 		padding: 0px;
 		padding-bottom: 10px;
 	}
 
+	h5 {
+		text-align: justify;
+    text-justify: inter-word;
+		font-family: 'Exo', sans-serif;
+		font-weight:100;
+		margin: 0px;
+		padding: 5px;
+		padding-bottom: 10px;
+		line-height: normal;
+	}
+
 	p{
-		margin:0 0 5px;
+		margin:0 0 5px 5px;
 		font-family: 'lato', sans-serif;
+		font-weight:50;
+		padding-bottom: 5px;
+
 	}
 
 	.clear{
@@ -248,41 +247,6 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 	.no-letter-spacing{
 		letter-spacing: 0px !important;
 	}
-
-
-
-/* Buttons
--------------------------*/
-
-
-
-	.button{
-		z-index: 0;
-		border: 3px solid #ccc;
-		cursor: pointer;
-		color: #191919;
-		display: block;
-		width: 150px;
-		height: 60px;
-		line-height: 55px;
-		font-weight: 900;
-		text-align: center;
-		letter-spacing: 3px;
-		font-family: 'Quicksand', sans-serif;
-		text-transform: uppercase;
-		font-size: 13px;
-		word-spacing: 1px;
-		-webkit-transition: all 0.4s;
-		-moz-transition: all 0.4s;
-		transition: all 0.4s;
-	}
-
-	.button:hover{
-		border: 3px solid #191919;
-	}
-
-
-
 
 /* Floats
 -------------------------*/
@@ -349,7 +313,7 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 
 
 	.section-content{
-		padding: 0px 10% 0px 10%;
+		padding: 50px 100px 100px 100px;
 		z-index: 9999;
 	}
 
@@ -360,6 +324,13 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 		padding: 150px;
 	}
 
+	.uk-grid-width-1-3>* {
+    width: 80%;
+		}
+
+		.uk-grid-width-1-2>* {
+	    width: 80%;
+			}
 
 
 
@@ -378,19 +349,6 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 		transition: all 0.4s;
 	}
 
-	.separator-center {
-		width: 40px;
-		height: 1px;
-		background: #505050 none repeat;
-		margin: 35px auto;
-		-webkit-transition: all 0.4s;
-		-moz-transition: all 0.4s;
-		transition: all 0.4s;
-	}
-
-
-
-
 
 /*======================
 
@@ -407,8 +365,8 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 
 
 
-	.quicksand{
-		font-family: 'Quicksand', sans-serif;
+	.exo{
+		font-family: 'Exo', sans-serif;
 
 	}
 
@@ -566,6 +524,7 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 
 	.f-big{
 		font-size: 45px;
+		padding-bottom: 35px;
 
 	}
 
@@ -593,9 +552,6 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 /* Solid Backgrounds
 -------------------------*/
 
-
-
-
 	.white-bg{
 		background-color: #efefef !important;
 	}
@@ -621,100 +577,11 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 
 
 	.image-bg-1{
-		background: url(../img/background.jpg);
+		background: url(../img/background_0.7.png);
 	}
 
-	.image-bg-2{
-		background: url(../img/background/02.jpg);
-	}
-
-	.image-bg-3{
-		background: url(../img/background/03.jpg);
-
-	}
-
-	.image-bg-4{
-		background: url(../img/background/04.jpg);
-
-	}
-
-	.image-bg-5{
-		background: url(../img/background/05.jpg);
-
-	}
-
-	.image-bg-6{
-		background: url(../img/background/06.jpg);
-
-	}
-
-	.image-bg-7{
-		background: url(../img/background/07.jpg);
-
-	}
-
-	.image-bg-8{
-		background: url(../img/background/08.jpg);
-		background-color: red;
-
-	}
-
-	.image-bg-9{
-		background: url(../img/background/09.jpg);
-
-	}
-
-	.image-bg-10{
-		background: url(../img/background/10.jpg);
-
-	}
-
-	.image-bg-11{
-		background: url(../img/background/11.jpg);
-
-	}
-
-	.image-bg-12{
-		background: url(../img/background/12.jpg);
-
-	}
-
-	.image-bg-13{
-		background: url(../img/background/13.jpg);
-
-	}
-
-	.image-bg-14{
-		background: url(../img/background/14.jpg);
-
-	}
-
-	.image-bg-15{
-		background: url(../img/background/15.jpg);
-
-	}
-
-	.image-bg-16{
-		background: url(../img/background/16.jpg);
-
-	}
-
-	.image-bg-1,
-	.image-bg-2,
-	.image-bg-3,
-	.image-bg-4,
-	.image-bg-5,
-	.image-bg-6,
-	.image-bg-7,
-	.image-bg-8,
-	.image-bg-9,
-	.image-bg-10,
-	.image-bg-11,
-	.image-bg-12,
-	.image-bg-13,
-	.image-bg-14,
-	.image-bg-15,
-	.image-bg-16{
+	.image-bg-1
+	{
 		width: 100%;
 		background-size: cover;
 		display: block;
@@ -745,6 +612,8 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 		top: 150px;
 		right: 60px;
 		z-index: 9999;
+
+
 	}
 
 	#navigation ul li{
@@ -771,15 +640,14 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 /* Headings
 ----------------------------*/
 
-
-
 	#header{
 		position: relative;
 		padding-top: 100px;
-		padding-bottom: 100px;
-		padding-right: 50px;
-		padding-left: 50px;
+		padding-bottom: 25px;
+		padding-right: 100px;
+		padding-left: 100px;
 		background: #fff;
+		margin-top: 10%;
 
 	}
 
@@ -826,8 +694,8 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 
 	.header-content li img{
 		opacity: 0.9;
-		max-width: 150px;
-		border-radius: 100%;
+		max-width: 200px;
+		border-radius: 5%;
 		-webkit-transition: all 0.2s;
 		-moz-transition: all 0.2s;
 		transition: all 0.2s;
@@ -838,24 +706,16 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 	}
 
 
-
 /* Contact Button
 ----------------------------*/
 
 
-	#contact-page{
+	#contact {
 		position: relative;
+		padding-right: 100px;
+		padding-left: 100px;
 		background: #fff;
-		padding-bottom: 150px;
 	}
-
-	#contact-page-dark{
-		position: relative;
-		background: #191919;
-		padding-bottom: 150px;
-	}
-
-
 
 /*========================
 
@@ -869,7 +729,11 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 	#portfolio{
 		position: relative;
 		background: #fff;
-		padding-bottom: 100px;
+		padding-bottom: 50px;
+	}
+
+	.item-portafolio {
+		margin-top: 10px;
 	}
 
 
@@ -993,149 +857,17 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 	}
 
 
-
-
 /*========================
 
-	07. Blog
+	07. Grid
 
 ==========================*/
 
-
-
-	#blog{
-		position: relative;
-		padding-top: 150px;
-		padding-bottom: 150px;
-		background: #fff;
+	[class*=uk-width] {
+		display: inline;;
 
 	}
 
-	#blog-dark{
-		position: relative;
-		padding-top: 150px;
-		padding-bottom: 150px;
-		background: #191919;
-
-	}
-
-
-/* Excerpt and Essentials
-----------------------------*/
-
-	.blog-excerpt{
-		margin-bottom: 75px;
-	}
-
-
-	.blog-excerpt h2{
-		letter-spacing: 1px;
-		word-spacing: 2px;
-	}
-
-	.blog-excerpt ul{
-		margin: 20px 0px 20px 0px;
-	}
-
-	.blog-excerpt ul li{
-		display: inline-block;
-		border-left: 1px solid #b2b2b2;
-		padding: 0px 20px 0px 20px;
-	}
-
-	.blog-slider ul li{
-		border: none;
-	}
-
-	.blog-excerpt img{
-		width: 100%;
-	}
-
-
-	.blog-excerpt p{
-		line-height: 1.8;
-		margin: 20px 0px 20px 0px;
-	}
-
-
-	.blog-excerpt .button{
-		margin-top: 30px;
-	}
-
-
-	.blog-excerpt iframe{
-		min-width: 100%;
-		height: 600px;
-	}
-
-
-/* Full Post
-----------------------------*/
-
-
-	.blog-post{
-		margin-bottom: 75px;
-	}
-
-
-	.blog-post blockquote{
-		line-height: 1.2;
-	}
-
-	.post-text p{
-		margin-bottom: 25px;
-	}
-
-
-
-/* Comments
-----------------------------*/
-
-
-
-
-	.comments{
-		padding-bottom: 150px;
-	}
-
-	.comment-form{
-		float: left;
-		text-align: left;
-	}
-
-	.form{
-		margin-top: 50px;
-	}
-
-	.form input{
-		padding: 15px;
-		margin-bottom: 20px;
-		float: left;
-		width: 100%;
-		border: 1px solid #e5e5e5;
-		background: transparent;
-	}
-
-	.form .button{
-		margin-top: 20px;
-	}
-
-	.comment-form{
-		margin-bottom: 100px;
-	}
-
-	.comment-form h3{
-		margin-bottom: 20px;
-	}
-
-	.form textarea{
-		width: 100%;
-		padding: 15px;
-		border: 1px solid #e5e5e5;
-		background: transparent;
-		color: #777777;
-
-	}
 
 /*========================
 
@@ -1144,91 +876,14 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 ==========================*/
 
 
-
 	#contact{
-		padding-bottom: 150px;
+		padding-bottom: 50px;
 		background: #fff;
 
 	}
 
-	#contact-dark{
-		padding-bottom: 150px;
-		background: #191919;
-
-	}
-
-	#contact-wrapper form input, form textarea{
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-		padding: 15px;
-		margin-bottom: 30px;
-		transition: none;
-		background: transparent;
-		width: 100%;
-		border: none;
-		color: #191919;
-		float: left;
-		border: 1px solid #e5e5e5;
-		font-size: 13px;
-		font-weight: 500;
-		word-spacing: 2.5px;
-		text-align: left;
-	}
-
-
-	#message{
-
-		height: 100px;
-	}
-
-	#contact-form{
-		text-align:left;
-
-	}
-
-	#contact-form p span {
-		display: block;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-	}
-
-	#contact-form p{
-		margin-top: 15px;
-	}
-
-	#contact-form  i{
-		margin-right: 5px;
-	}
-
-	#contact-form  p{
-		float: right;
-	}
-
-	.contact-full{
-		margin-top: 100px;
-	}
-
-	.contact-wrapper{
-		max-width: 800px;
-		background: red;
-	}
-
-	.contact-btn{
-		float: left;
-		background: transparent;
-	}
-
 	::-webkit-input-placeholder {
 	 color: #777777;
-	}
-
-	#contact-form  label {
-		cursor: text;
-		display: block;
-		margin: 0;
-		position: relative;
-		top: 0;
-		width: 100%;
 	}
 
 	:-moz-placeholder { /* Firefox 18- */
@@ -1242,34 +897,6 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 	:-ms-input-placeholder {
 	 color: #777777;
 	}
-
-	#contact-form .error {
-		bottom: 12px;
-		font-family: inherit;
-		font-size: 16px;
-		font-weight: 900;
-		left: auto;
-		letter-spacing: 0;
-		position: absolute;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		word-spacing: 3px;
-		left: 0px;
-		width: auto;
-		color: #777777;
-	}
-
-	.response h3 {
-		letter-spacing: 2px;
-		margin: 10px 0 25px;
-		text-transform: uppercase;
-	}
-
-	.contact-info h2{
-		margin-bottom: 30px;
-		line-height: 1;
-	}
-
 
 
 /*========================
@@ -1454,9 +1081,9 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 		color: #d51007;
 	}
 
-	.fa-likedin,
-	.fa-likedin-square{
-		color: #2f3233;
+	.fa-linkedin,
+	.fa-linkedin-square{
+		color: #333333;
 	}
 
 	.fa-linux{
@@ -1558,7 +1185,7 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 
 	.fa-twitter,
 	.fa-twitter-square{
-		color: #2f3233;
+		color: #333333;
 	}
 
 	.fa-tripadvisor{
@@ -1608,8 +1235,8 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 		color: #410093;
 	}
 
-	.fa-dribbble{
-		color: #2f3233;
+	.fa-dribbble, .fa-dribbble-square{
+		color: #333333;
 	}
 
 	.fa-behance,
@@ -1644,7 +1271,7 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 	}
 
 	.fa-instagram{
-		color: #2f3233;
+		color: #333333;
 	}
 
 
@@ -1666,86 +1293,6 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 ==========================*/
 
 
-/* Resolution Under 1396px
-----------------------------*/
-
-@media all and (max-width: 1396px) {
-
-.header-content li img{
-	max-width: 160px;
-}
-}
-
-/* Resolution Under 1320px
-----------------------------*/
-
-@media all and (max-width: 1320px) {
-
-.header-content li img{
-	max-width: 150px;
-}
-}
-
-/* Resolution Under 1280px
-----------------------------*/
-
-@media all and (max-width: 1280px) {
-
-.header-content li img{
-	max-width: 125px;
-}
-}
-
-/* Resolution Under 1150px
-----------------------------*/
-
-@media all and (max-width: 1150px) {
-
-.header-content li img{
-	max-width: 110px;
-}
-}
-
-/* Resolution Under 1070px
-----------------------------*/
-
-@media all and (max-width: 1070px) {
-
-.header-content li img{
-	max-width: 105px;
-}
-}
-
-/* Resolution Under 1045px
-----------------------------*/
-
-@media all and (max-width: 1045px) {
-
-.header-content li img{
-	max-width: 100px;
-}
-}
-
-/* Resolution Under 1020px
-----------------------------*/
-
-@media all and (max-width: 1020px) {
-
-.header-content li img{
-	max-width: 98px;
-}
-}
-
-/* Resolution Under 1010px
-----------------------------*/
-
-@media all and (max-width: 1010px) {
-
-.header-content li img{
-	max-width: 89px;
-}
-}
-
 /* Resolution Under 990px
 ----------------------------*/
 
@@ -1754,7 +1301,7 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 	@media all and (max-width: 992px) {
 
 		.sections{
-			padding: 30px;
+			padding: 20px;
 		}
 
 
@@ -1762,38 +1309,9 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 			padding: 150px 0px 150px 0px;
 		}
 
-		.header-content li img{
-			max-width: 120px;
-		}
-
 
 	}
-	/* Resolution Under 880px
-	----------------------------*/
 
-
-
-		@media all and (max-width: 880px) {
-
-			.header-content li img{
-				max-width: 105px;
-			}
-
-
-		}
-		/* Resolution Under 805px
-		----------------------------*/
-
-
-
-			@media all and (max-width: 805px) {
-
-				.header-content li img{
-					max-width: 90px;
-				}
-
-
-			}
 
 /* Resolution Under 768px
 ----------------------------*/
@@ -1805,6 +1323,11 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 
 		.sections{
 			padding-top: 0px;
+		}
+
+		.phone img {
+			max-width: 75%;
+			text-align: left;
 		}
 
 		#navigation{
@@ -1835,7 +1358,7 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 		}
 
 		.header-content li img{
-			max-width: 70px;
+			max-width: 50px;
 		}
 
 		.blog-excerpt iframe{
@@ -1845,64 +1368,14 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 
 	}
 
-	/* Resolution Under 650px
-	----------------------------*/
 
 
-
-		@media all and (max-width: 650px) {
-
-
-			.sections{
-				padding-top: 0px;
-			}
-
-			#navigation{
-				position: fixed;
-				top: 35%;
-				right: 3px;
-				z-index: 9999;
-				background: #8A8A8A;
-				padding: 10px 10px 0px 10px;
-				border-radius: 50px;
-
-			}
-
-			#navigation ul li{
-				margin-bottom: 100%;
-			}
-
-			.f-extra-expanded{
-				font-size: 2.5em;
-			}
-
-			.f-large{
-				font-size: 1.5em;
-			}
-
-			.f-expanded{
-				font-size: 1.3em;
-			}
-
-			.header-content li img{
-				max-width: 50px;
-			}
-
-			.blog-excerpt iframe{
-				height: 100%;
-			}
-
-
-		}
-
-
-
-/* Resolution Under 550px
+/* Resolution Under 530px
 ----------------------------*/
 
 
 
-	@media all and (max-width: 550px) {
+	@media all and (max-width: 530px) {
 
 
 		.blog-excerpt ul li{
@@ -1916,10 +1389,6 @@ Exclusively available here: https://themeforest.net/user/fourtabsthemes
 
 		.header-content li i{
 			font-size: 1em;
-		}
-
-		.header-content li img{
-			max-width: 0px;
 		}
 
 

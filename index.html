@@ -1,158 +1,164 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+<!-- Start Head -->
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Start Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  shrink-to-fit=no">
     <meta name="text" content>
     <meta name="author" content>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- End Meta -->
 
+<!--Title -->
     <title>Claire Soria</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--End Title -->
 
-        <!-- Icons falta definir los links -->
-    <link rel="shortcut icon" href="#">
-    <link rel="icon" href="#" type="image/x-icon">
+<!-- CSS Files -->
 
-    <link href="./css/font-awesome.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <!-- Lightbox -->
     <link href="./css/lightbox.css" rel="stylesheet">
+  <!-- TextRotator -->
     <link href="./css/simpletextrotartor.css" rel="stylesheet">
-    <link href="./css/ionicons.min.css" rel="stylesheet">
+    <!--How it works: Super <span class="rotate">Simple, Customizable, Light Weight, Easy</span> Text Rotator with Style -->
+  <!-- Ionicons -->
+    <link href="https://unpkg.com/ionicons@4.4.6/dist/css/ionicons.min.css" rel="stylesheet">
+  <!-- Tooltip -->
     <link href="./css/tooltip.css" rel="stylesheet">
+  <!-- Reset -->
     <link href="./css/reset.css"         type="text/css" rel="stylesheet">
+  <!-- UiKit -->
     <link href="./css/uikit.min.css" rel="stylesheet">
+  <!--Bootstrap> -->
     <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <!-- Default Style -->
     <link href="./css/style.css"        type="text/css" rel="stylesheet">
+<!-- End CSS Files -->
 
+  <!--Scripts -->
     <script src="./js/jquery.js"> </script>
     <script src="./js/main.js"> </script>
-    <script type="text/javascript" src="./js/analytics.js"></script>
     <script src="./js/modernizr-custom.js"> </script>
 
 </head>
+<!--End Head -->
 
+<!--Body Starts -->
 <body>
+  <!-- Main Container -->
   <div class="container">
-    <div class="sections image-bg-1 pattern-white">
+
+    <!-- Background-->
+    <div class="sections image-bg-1">
+
+      <!-- Navigation-->
       <div id="navigation">
         <ul>
           <li>
-            <a class="dark bold uppercase" href="#" data-uk-smoth-scroll data-uk-tooltip="{pos:&#39;left&#39;}" title="Home"> <i class="icon ion-ios-home-outline f-expanded"></i> </a>
+            <a class="dark bold uppercase" href="#header" data-uk-smoth-scroll data-uk-tooltip="{pos:&#39;left&#39;}" title="Home"> <i class="fas fa-home f-expanded"></i></a>
           </li>
           <li>
-            <a class="dark bold uppercase" href="#portfolio" data-uk-smoth-scroll data-uk-tooltip="{pos:&#39;left&#39;}" title="Portfolio"> <i class="icon ion-ios-list-outline f-expanded"></i> </a>
+            <a class="dark bold uppercase" href="#portfolio" data-uk-smoth-scroll data-uk-tooltip="{pos:&#39;left&#39;}" title="Portfolio"> <i class="fas fa-list f-expanded"></i> </a>
           </li>
           <li>
-            <a class="dark bold uppercase" href="#contact" data-uk-smoth-scroll data-uk-tooltip="{pos:&#39;left&#39;}" title="Contact"> <i class="icon ion-ios-paperplane-outline f-expanded"></i> </a>
+            <a class="dark bold uppercase" href="#contact" data-uk-smoth-scroll data-uk-tooltip="{pos:&#39;left&#39;}" title="Contact"> <i class="fas fa-comments f-expanded"></i> </a>
           </li>
         </ul>
-      </div> <!-- end Navigation -->
+      </div>
+      <!-- end Navigation -->
+
+<!-- Header-->
     <div id="header">
+
       <div section="section-content">
-        <div class="big-text uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade" data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;, delay:30}">
-          <ul class="header-content" display="inline-block">
-
-            <li class="no-margin">
-              <a href="./img/01.png" data-lightbox="portrait" >
-                <img src="./img/pic_right2.jpg" alt="Claire"> </a>
-            </li>
-            <li class="no-margin-top">
-              <a href="./img/01.png" data-lightbox="portrait" >
-                <img src="./img/pic_cat.png" alt="Claire"> </a>
-            </li>
-            <li class="no-margin-top">
-              <a href="./img/01.png" data-lightbox="portrait" >
-                <img src="./img/pic_front.jpg" alt="Claire"> </a>
-            </li>
-            <li class="no-margin-top">
-              <a href="./img/01.png" data-lightbox="portrait" >
-                <img src="./img/pic_finger.jpg" alt="Claire"> </a>
-            </li>
-            <li class="no-margin-top">
-              <a href="./img/01.png" data-lightbox="portrait" >
-                <img src="./img/pic_left.png" alt="Claire"> </a>
+        <div class="big-text uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade" data-uk-scrollspy="{cls:'uk-animation-fade',target:''; delay:30}">
+<!-- Profile pictures -->
+          <ul class="uk-flex">
+            <li class="uk-hidden-small uk-width-medium-1-3">
+              <a href="./img/01.png" >
+                <img src="./img/pic_right.png" alt="Claire" class="uk-border-rounded"></a>
             </li>
 
+            <li class="item phone uk-width-small-1-1 uk-width-medium-1-3">
+              <a href="./img/01.png" data-lightbox="portrait" >
+                <img src="./img/pic_finger.png" alt="Claire" class="uk-border-rounded"> </a>
+            </li>
+            <li class="uk-hidden-small uk-width-medium-1-3">
+              <a href="./img/01.png" data-lightbox="portrait" >
+                <img src="./img/pic_left.png" alt="Claire" class="uk-border-rounded"> </a>
+            </li>
           </ul>
-          <h2 class="t-left f-extra-expanded extrabold uppercase"> Hello</h2>
+<!-- End profile pictures -->
+
+<!-- Title-->
+          <h2 class="t-left f-extra-expanded extrabold uppercase"> Howdy</h2>
           <h2 class="t-left f-extra-expanded uppercase"> I am Claire.</h2>
           <h2 class="t-left f-large uppercase">I am a
               <span class="rotate ultrabold dark-bg white">
-              <span class="rotating flip up" style="display: inline-block; transform: rotateX(-180deg);">
-                <span class="back"> Product designer.</span>,
-                <span class="back"> UX/UI designer.</span>,
-              <span class="back"> learner.</span></span></span></h2>
+              <span class="rotating flip up" style="display: inline-block; transform: rotateX(-180deg);"> Product designer. ,UX/UI designer. , learner.</span></h2>
 
-          <h3 class="t-left f-semi-expanded normal uppercase bold"> Belong
-            <span class="bold"> EveryWhere</span>
-              <a href="#">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-              </a>
-            </h3>
-<div class="separator"></div>
-            <ul class="header-content t-right">
-
-              <li class="no-margin"> <a href="https://www.linkedin.com/in/clairesoriagondek/"> <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </a> </li>
-
-              <li class="no-margin-top"> <a href="https://www.instagram.com/wanderlust_in_my_veins/"> <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a> </li>
-
-              <li class="no-margin-top"> <a href="https://twitter.com/claire_gondek"> <i class="fa fa-twitter-square" aria-hidden="true"></i>
-              </a> </li>
+          <h3 class="t-left f-semi-expanded normal uppercase bold"> <i class="fa fa-map-marker" aria-hidden="true"></i> Belong
+            <span class="bold"> EveryWhere</span></h3>
 
 
-              <li class="no-margin-top"> <a href="https://dribbble.com/ClaireSG"> <i class="fa fa-dribbble" aria-hidden="true"></i>
-              </a> </li>
-
-            </ul>
         </div> <!-- class -->
       </div> <!-- section/content -->
     </div> <!-- end header -->
 
-
+<!-- Portfolio-->
     <div id="portfolio">
+    <!--Title-->
       <div class="section-content">
+        <h3 class="t-left f-big uppercase no-margin-top">
+          <span class="ultrabold">
+            PortFolio </span> </h3>
+        <!--Media -->
 
-        <ul id="work" class="works-filter uk-subnav uppercase ultrabold">
+        <div class="uk-grid">
+          <div class="item-portafolio uk-width-small-1-1 uk-width-medium-1-2">
 
-          <li data-uk-filter="" data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;, delay:20}" class="uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade"><a href=" #">Everything</a></li>
+            <img  src="./img/FitA.png" alt="Fit4All"> </div>
 
-          <li data-uk-filter="filter-projects" data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;,delay:40 }" class="uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade"><a href="#"> Projects</a></li>
-        </ul>
+          <div class="item-portafolio  uk-width-small-1-1 uk-width-medium-1-2">
 
-        <div data-uk-grid="{controls: &#39;#work&#39;}" style="position: relative; height: 400px;">
+              <img src="./img/Fit.png" alt="Fit4All"> </div>
+        </div>
+        <!-- Media ends-->
+    </div> <!-- Title ends -->
 
-          <div class="work uk-width-small-1-1 uk-width-medium-1-3"  data-grid-prepared="true" style="position: absolute; box-sizing: border-box; top: 0px; left: 0px; opacity: 1;">
-
-            <img src="./img/test.jpg" alt="test">
-
-            <a href="./img/test.jpg" data-lightbox="works" title="Fire">
-              <div class="hover">
-                  <p class="dark f-semi-expanded bold uppercase">Fit4All <br> project</p>
-              </div>
-            </a>
-          </div> <!-- work uk width (aqui falta las pics responsive)-->
-
-        <div class="work uk-width-small-1-1 uk-width-large-1-2 "
-        data-uk-filter="filter-projects"  data-grid-prepared="true" style="position: absolute; box-sizing: border-box; top: 0px; left:400px; opacity: 1;">
-
-          <img src="./img/test2.jpg" alt="test">
-          <a href="./img/test.jpg" data-lightbox="works" title="Fire">
-            <div class="hover">
-                <p class="dark f-semi-expanded bold uppercase">Test <br> Two</p>
-            </div>
-          </a>
-    </div> <!-- work uk width (aqui falta las pics responsive)-->
-    </div> <!-- data uk grids-->
-    </div>
-
-<div class="section-content">
-  <h3 class="t-left f-expanded uppercase no-margin-top">
+    <!-- Contact-->
+<div id="contact" >
+  <!-- Title -->
+  <h3 class="t-left f-big uppercase no-margin-top">
     <span class="ultrabold">
-      Let's talk! </span> </h3>
-  <div class="separator"></div>
+      About Me </span> </h3>
+  <!-- Grid -->
+  <div class="uk-block">
+    <div class="uk-grid">
+      <div class="uk-width-small-1-1 uk-width-medium-1-3">
+        <div class="uk-panel">
+          <h3 class="uppercase semibold">The Past</h3>
+        <h5>
+    Esto es una prueba de como va a quedar el texto escrito.Esto es una prueba de como va a quedar el texto escrito. </h5></div></div>
 
+      <div class="uk-width-small-1-1 uk-width-medium-1-3">
+        <div class="uk-panel">
+          <h3 class="uppercase semibold">The present</h3>
+        <h5>
+    Esto es una prueba de como va a quedar el texto escrito.Esto es una prueba de como va a quedar el texto escrito.
+  </h5></div></div>
+
+    <div class="uk-width-small-1-1 uk-width-medium-1-3">
+      <div class="uk-panel">
+        <h3 class="uppercase semibold">The future</h3>
+      <h5>
+  Esto es una prueba de como va a quedar el texto escrito.Esto es una prueba de como va a quedar el texto escrito.
+</h5></div></div>
+  </div>
+<hr>
   <h2 class="t-left f-normal uppercase no-letter-spacing">
     <i class="fa fa-map-marker" aria-hidden="true"></i>
   <a href="#" class="regular"> Barcelona, Spain</a></h2>
@@ -162,29 +168,29 @@
   <a href="#" class="regular"> +34 669 03 19 57 </a></h2>
 
   <h2 class="t-left f-normal uppercase no-letter-spacing no-margin-botton">
-    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    <i class="fas fa-at" aria-hidden="true"></i>
   <a href="#" class="regular"> claire@sg.com </a></h2>
 
-  <ul class="header-content t-left">
-    <li class="no-margin"> <a href="https://www.linkedin.com/in/clairesoriagondek/"> <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+  <ul class="header-content t-right">
+    <li class="no-margin"> <a href="https://www.linkedin.com/in/clairesoriagondek/"> <i class="fab fa-linkedin" aria-hidden="true"></i>
     </a> </li>
 
-    <li class="no-margin-top"> <a href="https://www.instagram.com/wanderlust_in_my_veins/"> <i class="fa fa-instagram" aria-hidden="true"></i>
+    <li class="no-margin-top"> <a href="https://www.instagram.com/wanderlust_in_my_veins/"> <i class="fab fa-instagram" aria-hidden="true"></i>
     </a> </li>
 
-    <li class="no-margin-top"> <a href="https://twitter.com/claire_gondek"> <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    <li class="no-margin-top"> <a href="https://twitter.com/claire_gondek"> <i class="fab fa-twitter-square"aria-hidden="true"></i>
     </a> </li>
 
 
-    <li class="no-margin-top"> <a href="https://dribbble.com/ClaireSG"> <i class="fa fa-dribbble" aria-hidden="true"></i>
+    <li class="no-margin-top"> <a href="https://dribbble.com/ClaireSG"> <i <i class="fab fa-dribbble-square" aria-hidden="true"></i>
     </a> </li>
   </ul>
+</div>
 </div> <!-- end contact-info -->
 </div> <!-- end portfolio -->
     <div id="footer">
-        <p class="gray2 f-small bold"> Design by .</p>
-
-        <a href="#" data-uk-smooth-scroll=""><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        <h5 class="t-center"> Made with <i class="fas fa-heart"></i> by Claire </h5>
+        <a class="t-center" href="#header" data-uk-smoth-scroll data-uk-tooltip="{pos:&#39;left&#39;}"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     </div> <!-- End Footer -->
 
   </div> <!-- CONTAINER? -->
@@ -207,7 +213,7 @@
   <script src="./js/tooltip.min.js"></script>
 
   <script src="./js/lightbox-plus-jquery.min.js"></script><div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container">
-    <img class="lb-image" src="./img/test2.jpg">
+    <img class="lb-image" src="./img/test.jpg">
     <div class="lb-nav"><a class="lb-prev" href="#"></a><a class="lb-next" href="#"></a></div>
     <div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer">
       <a class="lb-close"></a></div></div></div></div>
